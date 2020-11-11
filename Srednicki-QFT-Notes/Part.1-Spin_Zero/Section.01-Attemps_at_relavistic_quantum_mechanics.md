@@ -22,6 +22,7 @@ $$
 ### (1.23)
 
 &emsp;&emsp;非相对论情形下, 有
+
 $$
 i \hbar \pdfrac{}{t}\braket{\psi, t}{\psi, t} = H \psi(\vec x, t) \overset{\dagger}{\Longleftrightarrow} - i \hbar \pdfrac{}{t} \psi^*(\vec x, t) = H \psi^*(\vec x, t)
 $$
