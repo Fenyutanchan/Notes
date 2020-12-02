@@ -1,0 +1,45 @@
+\documentclass[mode=geye, green, device=pad, lang=en]{elegantnote}
+
+\title{Personal Notes of \textit{Part I: Scalar Fields} of \textit{Quantum Field Theory} by Srednicki}
+\author{Quan-feng WU}
+\institute{Theoretical Physics Division \\ Institute of High Energy Physics \\ Chinese Academy of Sciences}
+\version{1.00}
+\date{\today}
+
+\input{packages_inc.tex}
+\input{newcommand_def.tex}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+	\section{Attempts at relativistic quantum mechanics}
+	
+	\textbf{(1.5)}
+	\begin{align*}
+		H & = +\sqrt{\vec p^2 + m^2 c^4} = \sqrt{m^2 c^4 \left(1 + \frac{\vec p^2}{m c^2}\right)} \\
+		& = m c^2 \left( 1 + \frac{\vec p^2}{2m c^2} + \cdots \right) \\
+		& = m c^2 + \frac1{2m}\vec p^2.
+		\tag{1.5}\label{1.5}
+	\end{align*}
+
+	\textbf{(1.24)}
+	In the non-relativistic limit, the Shr\ddotout{o}dinger equation reads
+	\begin{align*}
+		& i\hbar\pdfrac{}{t} \psi(\vec x, t) = H\psi(\vec x, t) \\
+		\overset{\dagger}{\Longleftrightarrow}  -&i\hbar\pdfrac{}{t} \psi^*(\vec x, t) = H\psi^*(\vec x, t).
+	\end{align*} Therefore,
+	\begin{align*}
+		\ddfrac{}{t} \Braket{\psi,t|\psi,t} & = \ddfrac{}{t} \int{\dd3{\vec{x}} \Braket{\psi,t|\vec x} \Braket{\vec x|\psi,t}} \\
+		& = \int{\dd3{\vec x} \left[\psi(\vec x,t)\pdfrac{}{t}\psi^*(\vec x,t) + \psi^*(\vec x,t)\pdfrac{}{t}\psi(\vec x,t)\right]} \\
+		& = \frac1{i\hbar} \int{\dd3{\vec x}\left[-\psi(\vec x,t)H\psi^*(\vec x,t) + \psi^*(\vec x,t)H\psi(\vec x,t)\right]} \\
+		& = \frac1{i\hbar} \int{\dd3{\vec x}\left[+\psi(\vec x,t)\frac{\hbar^2}{2m}\nabla^2\psi^*(\vec x,t) - \psi^*(\vec x,t)\frac{\hbar^2}{2m}\nabla^2\psi(\vec x,t)\right]} \\
+		& = \frac{i\hbar}{2m} \int{\dd3{\vec x}\left[\psi(\vec x,t)\nabla^2\psi^*(\vec x,t) - \psi^*(\vec x,t)\nabla^2\psi(\vec x,t)\right]} \\
+		& = \frac{i\hbar}{2m} \int{\dd3{\vec x}\ \nabla\cdot \left[\psi(\vec x,t)\nabla\psi^*(\vec x,t) - \psi^*(\vec x,t)\nabla\psi(\vec x,t)\right]} \\
+		& = \frac{i\hbar}{2m} \oint_{s\rightarrow\infty}{\!\!\!\!\!\!\!\!\dd{}{\vec\sigma} \cdot \left[\psi(\vec x,t)\nabla\psi^*(\vec x,t) - \psi^*(\vec x,t)\nabla\psi(\vec x,t)\right]} \\
+		& = 0.
+		\tag{1.24}\label{1.24}
+	\end{align*} \autoref{1.24}
+
+\end{document}
