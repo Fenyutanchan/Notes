@@ -1,3 +1,5 @@
+**/.DS_Store
+
 /Srednicki-QFT-Notes/**/*
-!/Srednicki-QFT-Notes/**/*.tex
-!/Srednicki-QFT-Notes/**/*.pdf
+!*.tex
+!*.pdf
